@@ -55,3 +55,11 @@ def getArtisticPhotographCount(N: int, C: str, X: int, Y: int) -> int:
                   
   return res
 
+# # ===== SOLUCAO =====
+# Buscar A. Se encontrar, EXISTEM 2 CASOS: 
+# 1. Andar pra esquerda (iterador j) e procurar um "P" tal que X <= |i-j| <= Y 
+# Quando encontrar, andar pra direita (iterador k) e procurar um "B" tal que X <= |k-i| <= Y 
+# À MEDIDA QUE FOR ENCONTRANDO E ESSE RESULTADOS adicionar a resposta.
+# 2. Tem o outro lado da solução. Andar pra esquerda e procurar um "B" constraints.
+# Quando encontrar, andar pra direita e procurar um "P" satisfazendo constraints.
+
